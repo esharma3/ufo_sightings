@@ -1,3 +1,5 @@
+![ufo_sightings](static/images/readme.gif)
+
 ## Project UFO Sightings: JavaScript and DOM Manipulation
 
 #### This code creates a table of data dynamically based upon a dataset and allows the users to filter the table data for specific values. 
