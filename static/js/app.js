@@ -82,10 +82,6 @@ const handler = function() {
     row.append("td").text(dataRow.durationMinutes);
     row.append("td").text(dataRow.comments);
     });
-
-    // if (filteredData.length === 0) {
-    //     tbody.append("tr").append("td").text("No results found!")
-    // };
     
 };
 
