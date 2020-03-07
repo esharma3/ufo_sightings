@@ -1,4 +1,4 @@
-![ufo_sightings](static/images/readme.gif)
+![ufo_sightings](/static/images/readme.gif)
 
 ## Project UFO Sightings: JavaScript and DOM Manipulation
 
