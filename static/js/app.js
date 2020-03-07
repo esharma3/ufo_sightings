@@ -68,19 +68,25 @@ const handler = function() {
     };
     if (filterShape !== "") {
         filteredData = filteredData.filter(dataRow => dataRow.shape === filterShape)
-    } ;
-    // else filteredData = tableData;
+    };
+    
+    console.log(filteredData);
 
     filteredData.forEach(dataRow => {
-        let row = tbody.append("tr");
-        row.append("td").text(dataRow.datetime);
-        row.append("td").text(dataRow.city);
-        row.append("td").text(dataRow.state);
-        row.append("td").text(dataRow.country);
-        row.append("td").text(dataRow.shape);
-        row.append("td").text(dataRow.durationMinutes);
-        row.append("td").text(dataRow.comments);
+    let row = tbody.append("tr");
+    row.append("td").text(dataRow.datetime);
+    row.append("td").text(dataRow.city);
+    row.append("td").text(dataRow.state);
+    row.append("td").text(dataRow.country);
+    row.append("td").text(dataRow.shape);
+    row.append("td").text(dataRow.durationMinutes);
+    row.append("td").text(dataRow.comments);
     });
+
+    // if (filteredData.length === 0) {
+    //     tbody.append("tr").append("td").text("No results found!")
+    // };
+    
 };
 
 const clearTable = function() {
