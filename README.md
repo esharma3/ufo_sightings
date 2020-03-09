@@ -2,7 +2,7 @@
 
 ## Project UFO Sightings: JavaScript and DOM Manipulation
 
-#### This code creates a table of data dynamically based upon a dataset and allows the users to filter the table data for specific values. 
+#### This code creates a table of data dynamically based upon a dataset and allows users to filter the table data for specific values using a drop down lists of options to select from.
 Languages used:
 * JavaScript
 * HTML
