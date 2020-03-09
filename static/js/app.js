@@ -1,9 +1,9 @@
 // from data.js
 const tableData = data;
 
-// finding unique values for each filter category (date, city, state, country and shape)
+// finding unique values for each filter category (date, city, state, country and shape) and sorting them
 const dateList = tableData.map(item => item.datetime)
-    .filter((value, index, self) => self.indexOf(value) === index).sort();
+    .filter((value, index, self) => self.indexOf(value) === index);
 const cityList = tableData.map(item => item.city)
     .filter((value, index, self) => self.indexOf(value) === index).sort();
 const stateList = tableData.map(item => item.state)
@@ -13,7 +13,7 @@ const countryList = tableData.map(item => item.country)
 const shapeList = tableData.map(item => item.shape)
     .filter((value, index, self) => self.indexOf(value) === index).sort();
 
-// adding unique values to drop down list options for each filter category on the page (date, city, state, country and shape)
+// adding unique & sorted values to drop down list options for each filter category on the page (date, city, state, country and shape)
 dateList.forEach(item => {
     d3.select("#datetime_list").append("option").append("value").text(item)
 });
@@ -85,14 +85,12 @@ const handler = function() {
     
 };
 
+// function for clearing the table and input box selection
 const clearTable = function() {
-    window.location.reload();
-    // tbody.html("");
-    // d3.select("#datetime").property("value") = "";
-    // test = "";
+    window.location.href = window.location.href + '?refresh';
 };
 
-// calling the function to add data table on the web page when the filter button is clicked or enter key is pressed
+// calling the function to add/clear data table on the web page when the filter/reset button is clicked or enter key is pressed
 inputDate.on("change", handler);
 inputCity.on("change", handler);
 inputState.on("change", handler);

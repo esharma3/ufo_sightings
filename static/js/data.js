@@ -904,7 +904,7 @@ const data = [{
     state: "wv",
     country: "us",
     shape: "sphere",
-    durationMinutes: "7 minuts",
+    durationMinutes: "7 minutes",
     comments: "something followed my family and left a piece behind"
   },
   {
