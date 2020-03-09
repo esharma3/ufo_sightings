@@ -33,32 +33,31 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">Filter Search</div>
                             <div class="panel-body">
-                                <div class="form-group">
+                                <div class="form-group" autocomplete="off">
                                     <ul class="list-group" id="filters">
                                         <li class="filter list-group-item">
                                             <label for="date">Enter Date</label>
-                                            <input type="text" list="datetime_list" id="datetime">
+                                            <input type="text" list="datetime_list" id="datetime" autocomplete="off">
                                             <datalist id="datetime_list"></datalist>
                                         </li>
                                         <li class="filter list-group-item">
                                             <label for="city">Enter City</label>
-                                            <input type="text" list="city_list" id="city">
+                                            <input type="text" list="city_list" id="city" autocomplete="off">
                                             <datalist id="city_list"></datalist>
                                         </li>
                                         <li class="filter list-group-item">
                                             <label for="state">Enter State</label>
-                                            <input type="text" list="state_list" id="state">
+                                            <input type="text" list="state_list" id="state" autocomplete="off">
                                             <datalist id="state_list"></datalist>
                                         </li>
                                         <li class="filter list-group-item">
                                             <label for="country">Enter Country</label>
-                                            <input type="text" list="country_list" id="country">
+                                            <input type="text" list="country_list" id="country" autocomplete="off">
                                             <datalist id="country_list"></datalist>
-                                            <! <input class="form-control" id="country" placeholder="us">
                                         </li>
                                         <li class="filter list-group-item">
                                             <label for="shape">Enter Shape</label>
-                                            <input type="text" list="shape_list" id="shape">
+                                            <input type="text" list="shape_list" id="shape" autocomplete="off">
                                             <datalist id="shape_list"></datalist>
                                         </li>
                                     </ul>
@@ -93,7 +92,7 @@
             <span class="bottom">UFO Sightings &copy 2020, Ekta Sharma</span>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="static/js/data.js"></script>
     <script src="static/js/app.js"></script>
 </body>
